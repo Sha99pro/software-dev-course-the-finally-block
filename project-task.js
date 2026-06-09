@@ -87,5 +87,5 @@ processFile("myFile.txt", "Hello, world!"); // ✅ Should process successfully
 processFile("myFile.txt", -1);                // TypeError : File data must be a string
 processFile("myFile.txt", 0);                //TypeError : File data must be a string
 processFile("", 0);                    //ReferenceError : File name is missing.
-//processFile("", abc);                // ReferenceError: abc is not defined
-processFile("myFile.txt", a);
+processFile("", abc);                // ReferenceError: abc is not defined
+processFile("myFile.txt", a);           //ReferenceError: a is not defined
